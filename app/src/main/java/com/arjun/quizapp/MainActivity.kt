@@ -274,12 +274,4 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-// Data class for Question
-//data class Question(val questionText: String, val options: List<String>, val correctAnswerIndex: Int)
 
-class QuizViewModel : ViewModel() {
-    var currentQuestions: List<Question> = emptyList()
-    var questionsAnswered = 0
-    var correctAnswers = 0
-    var remainingTime: Long = 10 * 60 * 1000L // Default to 10 minutes
-}
